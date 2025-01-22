@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dc:record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dc:title>Testing IE for Alma Migration DNX Update</dc:title>
+	<dc:date>2015-09-10 09:00:22.0</dc:date>
+	<dcterms:available>2015-09-10 09:00:22.0</dcterms:available>
+	<dc:rights>100</dc:rights>
+	<dc:type>InteractiveResource</dc:type>
+	<dc:format>text</dc:format>
+	<dc:identifier xsi:type="archwayUniqueId">R123456789</dc:identifier>
+</dc:record>

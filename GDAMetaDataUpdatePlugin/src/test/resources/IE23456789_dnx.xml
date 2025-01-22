@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dnx xmlns="http://www.exlibrisgroup.com/dps/dnx">
+	<section id="generalIECharacteristics">
+		<record>
+			<key id="IEEntityType">ANZ_DigitisedText</key>
+			<key id="submissionReason">Digitised</key>
+			<key id="status">ACTIVE</key>
+		</record>
+	</section>
+	<section id="objectIdentifier">
+		<record>
+			<key id="objectIdentifierType">FedoraID</key>
+			<key id="objectIdentifierValue">archives:37083</key>
+		</record>
+		<record>
+			<key id="objectIdentifierType">ArchwayUniqueID</key>
+			<key id="objectIdentifierValue">R100456789</key>
+		</record>
+	</section>
+	<section id="internalIdentifier">
+		<record>
+			<key id="internalIdentifierType">SIPID</key>
+			<key id="internalIdentifierValue">233958</key>
+		</record>
+		<record>
+			<key id="internalIdentifierType">PID</key>
+			<key id="internalIdentifierValue">IE17922862</key>
+		</record>
+		<record>
+			<key id="internalIdentifierType">DepositSetID</key>
+			<key id="internalIdentifierValue">295601</key>
+		</record>
+	</section>
+	<section id="objectCharacteristics">
+		<record>
+			<key id="objectType">INTELLECTUAL_ENTITY</key>
+			<key id="creationDate">2012-01-27 14:51:56</key>
+			<key id="createdBy">ANZDM</key>
+			<key id="modificationDate">2012-01-27 14:51:56</key>
+			<key id="modifiedBy">ANZDM</key>
+			<key id="owner">CRS00.ANZ01.GDA01</key>
+		</record>
+	</section>
+</dnx>
