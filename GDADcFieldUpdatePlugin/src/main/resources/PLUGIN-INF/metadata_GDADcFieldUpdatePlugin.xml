@@ -1,0 +1,72 @@
+<pl:metadata-config xmlns:pl="http://www.exlibrisgroup.com/Plugins/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <pl:pluginTypeName>RepositoryTaskPlugin</pl:pluginTypeName>
+    <pl:deployName>GDADcFieldUpdatePlugin</pl:deployName>
+    <pl:className>nz.govt.natlib.ndha.plugin.repositorytask.GDADcFieldUpdatePlugin</pl:className>
+
+    <pl:initParameters>
+        <fr:x_form  xmlns:fr="http://com/exlibris/digitool/common/forms/xmlbeans">
+            <form_name>GDADcFieldUpdatePluginParameters</form_name>
+            <description>GDA DcField Update Plugin Initial Parameters</description>
+            <grid_x>1</grid_x>
+            <md_format>1</md_format>
+            <x_fields>
+                <!-- csv file location for (i) DNX: Alma MMS ID, BIB IDs (ii) DC IE PID,Title -->
+                <x_field>
+                    <field_name>infileNameAndPath</field_name>
+                    <label>Input File Name and Location</label>
+                    <ui_tool_tip>Location and name of the input csv file</ui_tool_tip>
+                    <single>true</single>
+                    <default_value>-</default_value>
+                    <mandatory>true</mandatory>
+                    <x_logic_type>String</x_logic_type>
+                    <x_ui_type>TextField</x_ui_type>
+                </x_field>
+
+                <!-- Meta Data Sub Type for DC fields - isPartOf or provenance -->
+                <x_field>
+                    <field_name>dcField</field_name>
+                    <label>DC Metadata Field</label>
+                    <ui_tool_tip>DC metadata field - isPartOf or provenance</ui_tool_tip>
+                    <single>true</single>
+                    <default_value>isPartOf</default_value>
+                    <mandatory>true</mandatory>
+                    <x_logic_type>String</x_logic_type>
+                    <x_ui_type>ComboBox</x_ui_type>
+                    <x_options>
+                        <x_option>
+                            <value>dcterms:isPartOf</value>
+                            <label>dcterms:isPartOf</label>
+                        </x_option>
+                        <x_option>
+                            <value>dcterms:provenance</value>
+                            <label>dcterms:provenance</label>
+                        </x_option>
+                    </x_options>
+                </x_field>
+            </x_fields>
+        </fr:x_form>
+    </pl:initParameters>
+
+    <pl:description>Update the chosen Dc Field for a GDA IE</pl:description>
+    <pl:version>1.0</pl:version>
+    <pl:materialType>DIGITAL</pl:materialType>
+    <pl:module>Repository</pl:module>
+    <pl:generalType>TASK</pl:generalType>
+    <pl:publicApi>N</pl:publicApi>
+    <pl:implType>java</pl:implType>
+    <pl:contactPerson>
+        <contact_info xmlns="http://www.exlibrisgroup.com/Plugins/1.0/">
+            <contactType>admin</contactType>
+            <firstName>NDHA</firstName>
+            <lastName>Administrator</lastName>
+            <telephone1>0800474300</telephone1>
+            <telephone2></telephone2>
+            <email>ndha.admin@dia.govt.nz</email>
+            <address1>Corner Molesworth and Aitken St</address1>
+            <address2>Wellington</address2>
+            <city>Wellington</city>
+            <zipCode>6011</zipCode>
+            <country>New Zealand</country>
+        </contact_info>
+    </pl:contactPerson>
+</pl:metadata-config>
