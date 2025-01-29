@@ -6,7 +6,7 @@
   <artifactId>GDADcFieldUpdatePlugin</artifactId>
   <version>1.1</version>
   <packaging>jar</packaging>
-  <name>Rosetta Repository Task Java Plugin to a DC field for an IE in GDA</name>
+  <name>Rosetta Repository Task Java Plugin to Update a DC field for an IE in GDA</name>
   <url>http://maven.apache.org</url>
 
   <properties>
