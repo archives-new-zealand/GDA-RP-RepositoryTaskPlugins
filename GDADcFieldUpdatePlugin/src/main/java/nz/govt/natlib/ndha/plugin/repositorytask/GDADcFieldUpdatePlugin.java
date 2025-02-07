@@ -96,10 +96,12 @@ public class GDADcFieldUpdatePlugin implements RepositoryTaskPlugin {
 
                         } else {
                             logger.error("The current data in the csv does not match the IE " + IE_PID);
+                            taskResults.addResult(IE_PID, null, false, "The current data in the csv does not match the data in IE :[" + IE_PID + "]");
                         }
 
                     } else {
                         logger.error("Unable to find the corresponding dc value for IE PID:[" + IE_PID + "]");
+                        taskResults.addResult(IE_PID, null, false, "Unable to find the corresponding updated dc value for IE PID:[" + IE_PID + "]");
                     }
 
                 } catch (IOException ex) {
