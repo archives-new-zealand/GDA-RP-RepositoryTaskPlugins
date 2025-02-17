@@ -119,7 +119,7 @@ public class GDAMetaDataUpdatePlugin implements RepositoryTaskPlugin {
 
                         logger.info("Successfully updated IE DC record with new rNumber:[" + updatedRNumber
                                 + "] for IE PID:[" + IE_PID + "] using the " + getClass().getSimpleName());
-
+                        taskResults.addResult(IE_PID, null, true, "R number was successfully updated");
                     } else {
                         logger.error("Unable to find the corresponding updated rNumber for IE PID:[" + IE_PID + "]");
                         taskResults.addResult(IE_PID, null, false, "Unable to find the corresponding updated rNumber for IE PID:[" + IE_PID + "]");
@@ -139,8 +139,8 @@ public class GDAMetaDataUpdatePlugin implements RepositoryTaskPlugin {
                 taskResults.addResult(IE_PID, null, false, "Input file does not exist in the specified location! Unable to update the DNX or DC metadata for IE");
             }
         }
-        return taskResults;
 
+        return taskResults;
     }
     // Method implementation defined in the interface - leave default
     @Override

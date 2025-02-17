@@ -93,6 +93,7 @@ public class GDADcFieldUpdatePlugin implements RepositoryTaskPlugin {
                             ieDublinCore.addElement(dcField, newDcValue);
                             ieEditor.setDC(ieDublinCore, ieDublinCore.getMid());
                             logger.info("Successfully updated IE dc:isPartOf for IE PID:[" + IE_PID + "] using the " + getClass().getSimpleName());
+                            taskResults.addResult(IE_PID, null, true, dcField + " was successfully updated");
 
                         } else {
                             logger.error("The current data in the csv does not match the IE " + IE_PID);
@@ -118,8 +119,8 @@ public class GDADcFieldUpdatePlugin implements RepositoryTaskPlugin {
                 taskResults.addResult(IE_PID, null, false, "Input file does not exist in the specified location! Unable to update the DNX or DC metadata for IE");
             }
         }
-        return taskResults;
 
+        return taskResults;
     }
 
     // Method implementation defined in the interface - leave default

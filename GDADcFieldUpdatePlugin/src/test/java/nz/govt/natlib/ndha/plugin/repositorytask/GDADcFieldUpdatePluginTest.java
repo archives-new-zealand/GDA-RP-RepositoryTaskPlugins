@@ -56,7 +56,7 @@ public class GDADcFieldUpdatePluginTest {
     }
 
     public void testGDADcFUPlugin(String IE_PID, String oldValue, String newValue, String dcField, String csvFile, boolean shouldUpdate) throws Exception {
-        GDADcFieldUpdatePlugin GDADcFUPlgin = new GDADcFieldUpdatePlugin();
+        GDADcFieldUpdatePlugin GDADcFUPlugin = new GDADcFieldUpdatePlugin();
         mockIEEditorImpl ieEditor = new mockIEEditorImpl(IE_PID);
 
         String dc_str = new Scanner(new File("./src/test/resources/" + IE_PID + "_dc.xml")).useDelimiter("\\A").next();
@@ -78,8 +78,8 @@ public class GDADcFieldUpdatePluginTest {
         }
 
         // Run the plugin
-        TaskResults taskResult = GDADcFUPlgin.execute(ieEditor, initParams, new TaskResults());
-
+        TaskResults taskResult = GDADcFUPlugin.execute(ieEditor, initParams, new TaskResults());
+        System.out.println(taskResult);
         // Check DC value has been updated
         dcValue = ieEditor.getDcForIE().getXMLPathValue(dcField);
 

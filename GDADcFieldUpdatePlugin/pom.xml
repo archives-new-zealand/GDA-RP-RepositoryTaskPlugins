@@ -4,7 +4,7 @@
 
   <groupId>nz.govt.natlib.ndha.plugin.repositorytask</groupId>
   <artifactId>GDADcFieldUpdatePlugin</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   <packaging>jar</packaging>
   <name>Rosetta Repository Task Java Plugin to Update a DC field for an IE in GDA</name>
   <url>http://maven.apache.org</url>

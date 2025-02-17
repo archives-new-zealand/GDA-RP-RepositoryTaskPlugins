@@ -71,6 +71,8 @@ public class GDAMetaDataUpdatePluginTest {
         assertEquals("DC initial ArchwayUniqueID", oldRNumber, dcValue);
         TaskResults taskResult = GDAMUPlugin.execute(ieEditor, initParams, new TaskResults());
 
+        System.out.println(taskResult);
+
         // Check RNumber has been updated
         for (ObjectIdentifier objIdentifier : objIdentifierList1) {
             if (objIdentifier.getObjectIdentifierType().equalsIgnoreCase("ArchwayUniqueID")) {
