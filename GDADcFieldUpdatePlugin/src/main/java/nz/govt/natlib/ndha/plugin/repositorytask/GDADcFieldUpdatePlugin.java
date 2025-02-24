@@ -115,8 +115,8 @@ public class GDADcFieldUpdatePlugin implements RepositoryTaskPlugin {
                 }
 
             } else {
-                logger.error("Input file does not exist in the specified location! Unable to update the DNX or DC metadata for IE:[" + IE_PID +"]");
-                taskResults.addResult(IE_PID, null, false, "Input file does not exist in the specified location! Unable to update the DNX or DC metadata for IE");
+                logger.error("Input file does not exist in the specified location! Unable to update the DC metadata for IE:[" + IE_PID +"]");
+                taskResults.addResult(IE_PID, null, false, "Input file does not exist in the specified location! Unable to update the DC metadata for IE");
             }
         }
 

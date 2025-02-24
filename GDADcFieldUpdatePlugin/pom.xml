@@ -4,7 +4,7 @@
 
   <groupId>nz.govt.natlib.ndha.plugin.repositorytask</groupId>
   <artifactId>GDADcFieldUpdatePlugin</artifactId>
-  <version>1.2</version>
+  <version>1.3</version>
   <packaging>jar</packaging>
   <name>Rosetta Repository Task Java Plugin to Update a DC field for an IE in GDA</name>
   <url>http://maven.apache.org</url>
@@ -30,12 +30,12 @@
   </build>
 
   <dependencies>
-    <!-- Rosetta dps-sdk 5.0.0 - PROVIDED BY ROSETTA -->
-    <!-- mvn install:install-file -Dfile=./lib/dps-sdk-5.0.0.jar -DgroupId=com.exlibris -DartifactId=dps-sdk -Dversion=5.0.0 -Dpackaging=jar -->
+    <!-- Rosetta dps-sdk PROVIDED BY ROSETTA -->
+    <!-- mvn install:install-file -Dfile=../lib/dps-sdk-8.2.0.jar -DgroupId=com.exlibris -DartifactId=dps-sdk -Dversion=8.2.0 -Dpackaging=jar -->
     <dependency>
       <groupId>com.exlibris</groupId>
       <artifactId>dps-sdk</artifactId>
-      <version>7.1.0</version>
+      <version>8.2.0</version>
       <scope>provided</scope>
     </dependency>
 
