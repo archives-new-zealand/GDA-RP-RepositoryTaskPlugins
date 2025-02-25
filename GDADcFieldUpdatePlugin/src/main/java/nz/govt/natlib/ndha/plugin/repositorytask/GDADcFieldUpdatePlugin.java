@@ -92,6 +92,12 @@ public class GDADcFieldUpdatePlugin implements RepositoryTaskPlugin {
                             ieDublinCore.removeElemet(dcField);
                             ieDublinCore.addElement(dcField, newDcValue);
                             ieEditor.setDC(ieDublinCore, ieDublinCore.getMid());
+
+                            // Grab the dnx and set back to the IE unchanged to force an update to the modified data
+                            // Workaround for a Rosetta bug
+                            DnxDocumentHelper ieDNX = ieEditor.getDnxHelperForIE();
+                            ieEditor.setDnxForIE(ieDNX);
+
                             logger.info("Successfully updated IE dc:isPartOf for IE PID:[" + IE_PID + "] using the " + getClass().getSimpleName());
                             taskResults.addResult(IE_PID, null, true, dcField + " was successfully updated");
 
