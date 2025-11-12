@@ -24,7 +24,7 @@ instal the plugin as custom plugin to your Rosetta instance
 create a Task chain using this plugin
 create a Set of IEs you want to change in Rosetta (Manage Sets and Processes)
 create a Process with the above Task chain
-run the Process, connect it to the the above Set and point it to the CSV location (in the Process config field of "Input File name and Location"
+run the Process, connect it to the the above Set and point it to the CSV location (in the Process config field of "Input File name and Location")
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 UAT Plugins jar location
